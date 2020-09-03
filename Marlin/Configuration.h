@@ -324,10 +324,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  // Ultimaker
-  #define DEFAULT_Kp 15.83
-  #define DEFAULT_Ki 1.51
-  #define DEFAULT_Kd 41.50
+  // Sidwinder w/Hermera
+  #define DEFAULT_Kp 47.6
+  #define DEFAULT_Ki 8.94
+  #define DEFAULT_Kd 63.37
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -553,7 +553,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.121, 80.121, 399.778, 409 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 406 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -824,7 +824,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 300
+#define X_BED_SIZE 310
 #define Y_BED_SIZE 310
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
