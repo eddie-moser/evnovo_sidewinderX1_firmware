@@ -329,7 +329,7 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 280
+#define HEATER_0_MAXTEMP 250
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -359,9 +359,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define DEFAULT_Kp 15.83
-  #define DEFAULT_Ki 1.51
-  #define DEFAULT_Kd 41.50
+  //#define DEFAULT_Kp 15.83
+  //#define DEFAULT_Ki 1.51
+  //#define DEFAULT_Kd 41.50
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -372,6 +372,11 @@
   //#define DEFAULT_Kp 63.0
   //#define DEFAULT_Ki 2.25
   //#define DEFAULT_Kd 440
+
+  //Artillery Sidewinder X1 w/E3D 40w Cartridge & Thermistor in a Mosquito
+  #define DEFAULT_Kp 6.97
+  #define DEFAULT_Ki 0.40
+  #define DEFAULT_Kd 30.11
 
 #endif // PIDTEMP
 
@@ -834,7 +839,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
