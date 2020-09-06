@@ -325,9 +325,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Sidwinder w/Hermera
-  #define DEFAULT_Kp 47.6
-  #define DEFAULT_Ki 8.94
-  #define DEFAULT_Kd 63.37
+  #define DEFAULT_Kp 30.14
+  #define DEFAULT_Ki 5.33
+  #define DEFAULT_Kd 42.59
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
