@@ -60,11 +60,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-<<<<<<< HEAD
 #define STRING_CONFIG_H_AUTHOR "(Eddie Moser, Artillery Sidewinder X1)" // Who made the changes.
-=======
-#define STRING_CONFIG_H_AUTHOR "(Eddie Moser, Artillery X1)" // Who made the changes.
->>>>>>> Hermera
 //#define SHOW_BOOTSCREEN
 //#define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 //#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -299,11 +295,7 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-<<<<<<< HEAD
-#define HEATER_0_MAXTEMP 280
-=======
 #define HEATER_0_MAXTEMP 285
->>>>>>> Hermera
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -332,16 +324,7 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-<<<<<<< HEAD
-  // Ultimaker
-  //#define DEFAULT_Kp 15.83
-  //#define DEFAULT_Ki 1.51
-  //#define DEFAULT_Kd 41.50
-
-  // Sidwinder 
-=======
   // Sidwinder w/Hermera
->>>>>>> Hermera
   #define DEFAULT_Kp 30.14
   #define DEFAULT_Ki 5.33
   #define DEFAULT_Kd 42.59
@@ -423,11 +406,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-<<<<<<< HEAD
-#define EXTRUDE_MAXLENGTH 310
-=======
 #define EXTRUDE_MAXLENGTH 350
->>>>>>> Hermera
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -574,23 +553,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-<<<<<<< HEAD
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1200, 445 } //Starting point for Mosquito & Bondtech BMG
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 445 }
-=======
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 406 }
->>>>>>> Hermera
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-<<<<<<< HEAD
-#define DEFAULT_MAX_FEEDRATE          { 600, 600, 50, 40 }
-=======
 #define DEFAULT_MAX_FEEDRATE          { 600, 600, 10, 50 }
->>>>>>> Hermera
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
