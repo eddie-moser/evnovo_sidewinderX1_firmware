@@ -555,7 +555,7 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 445 } //Default Steps for stock Sidewinder
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 406 } // Steps for E3D Hermera
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 1200 } // Steps for Slice Engineering Mosquito
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415 } // Steps for Slice Engineering Mosquito
 
 /**
  * Default Max Feed Rate (mm/s)
