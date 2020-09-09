@@ -60,7 +60,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Eddie Moser, Artillery Sidewinder X1)" // Who made the changes.
 //#define SHOW_BOOTSCREEN
 //#define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 //#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -359,9 +359,14 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define DEFAULT_Kp 15.83
-  #define DEFAULT_Ki 1.51
-  #define DEFAULT_Kd 41.50
+  //#define DEFAULT_Kp 15.83
+  //#define DEFAULT_Ki 1.51
+  //#define DEFAULT_Kd 41.50
+
+  // Sidwinder 
+  #define DEFAULT_Kp 30.14
+  #define DEFAULT_Ki 5.33
+  #define DEFAULT_Kd 42.59
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -587,14 +592,15 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.121, 80.121, 399.778, 445 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1200, 445 } Starting point for Mosquito & Bondtech BMG
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 445 }
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 50, 40 }
+#define DEFAULT_MAX_FEEDRATE          { 600, 600, 50, 40 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
